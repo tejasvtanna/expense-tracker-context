@@ -4,19 +4,14 @@ import { MdEdit, MdDelete } from 'react-icons/md'
 import { ExpenseContext } from '../context/ExpenseContext'
 
 const ExpenseItem = ({ expense }) => {
-   const [
+   const {
       expenses,
       setExpenses,
-      editId,
       setEditId,
-      charge,
       setCharge,
-      amount,
       setAmount,
-      alert,
-      setAlert,
       showAlert
-   ] = useContext(ExpenseContext)
+    } = useContext(ExpenseContext)
 
    // console.log(useContext(ExpenseContext))
 

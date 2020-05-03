@@ -3,7 +3,7 @@ import '../App.css'
 import { ExpenseContext } from '../context/ExpenseContext'
 
 const ExpenseTotal = () => {
-   const [expenses] = useContext(ExpenseContext)
+   const {expenses} = useContext(ExpenseContext)
 
    return (
       <h1>

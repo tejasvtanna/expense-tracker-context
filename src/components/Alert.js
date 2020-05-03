@@ -4,29 +4,17 @@ import { useContext } from 'react'
 import { ExpenseContext } from '../context/ExpenseContext'
 
 const Alert = () => {
-   const [
-      expenses,
-      setExpenses,
-      editId,
-      setEditId,
-      charge,
-      setCharge,
-      amount,
-      setAmount,
-      alert,
-      setAlert,
-      showAlert,
-   ] = useContext(ExpenseContext)
+    const { alert } = useContext(ExpenseContext)
 
-   debugger
+    debugger
 
-   return (
-      <>
-         {alert.show && (
-            <div className={`alert alert-${alert.type}`}>{alert.text}</div>
-         )}
-      </>
-   )
+    return (
+        <>
+            {alert.show && (
+                <div className={`alert alert-${alert.type}`}>{alert.text}</div>
+            )}
+        </>
+    )
 }
 
 export default Alert

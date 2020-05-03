@@ -5,7 +5,7 @@ import { ExpenseContext } from '../context/ExpenseContext'
 import { v4 as uuid } from 'uuid'
 
 const ExpenseForm = () => {
-   const [
+   const {
       expenses,
       setExpenses,
       editId,
@@ -14,10 +14,8 @@ const ExpenseForm = () => {
       setCharge,
       amount,
       setAmount,
-      alert,
-      setAlert,
       showAlert
-   ] = useContext(ExpenseContext)
+    } = useContext(ExpenseContext)
 
    const handleSubmit = (e) => {
       debugger
